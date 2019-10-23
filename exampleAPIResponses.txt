@@ -1,0 +1,222 @@
+An example of the API respones from the hashtag 'fun'
+
+
+# Twitter API response:
+
+
+[-] Request: POST /getHashtags at Wed Oct 23 2019 17:58:59 GMT-0400, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0
+{
+	"hashtag": "fun"
+}
+[
+	{
+		"created_at": "Wed Oct 23 21:58:43 +0000 2019",
+		"id": 1187126229062828000,
+		"id_str": "1187126229062828042",
+		"text": "RT @Michelebourke1: Thought I'd share a small selection of this year's paintings. #artforsale #giftideas #christmasgifts #wallart #fun #pai…",
+		"truncated": false,
+		"entities": {
+			"hashtags": [
+				{
+					"text": "artforsale",
+					"indices": [
+						82,
+						93
+					]
+				},
+				{
+					"text": "giftideas",
+					"indices": [
+						94,
+						104
+					]
+				},
+				{
+					"text": "christmasgifts",
+					"indices": [
+						105,
+						120
+					]
+				},
+				{
+					"text": "wallart",
+					"indices": [
+						121,
+						129
+					]
+				},
+				{
+					"text": "fun",
+					"indices": [
+						130,
+						134
+					]
+				}
+			],
+			"symbols": [],
+			"user_mentions": [
+				{
+					"screen_name": "Michelebourke1",
+					"name": "Michele bourke",
+					"id": 862726965761069000,
+					"id_str": "862726965761069058",
+					"indices": [
+						3,
+						18
+					]
+				}
+			],
+			"urls"
+...
+
+
+# Datumbox API response:
+
+
+[-] Response: 200 374.928 ms 
+{"message":"::ffff:127.0.0.1 - - [23/Oct/2019:21:58:59 +0000] \"POST /getHashtags HTTP/1.1\" 200 38318 \"http://0.0.0.0:3000/\" \"Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0\"\n","level":"info"}
+[-] Request: POST /datumBoxSentiment at Wed Oct 23 2019 17:58:59 GMT-0400, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0
+[undefined] Request Body:
+{
+	"tweetText": "RT @Michelebourke1: Thought I'd share a small selection of this year's paintings. #artforsale #giftideas #christmasgifts #wallart #fun #pai…"
+}
+positive
+[-] Response: 200 478.363 ms 
+{"message":"::ffff:127.0.0.1 - - [23/Oct/2019:21:58:59 +0000] \"POST /datumBoxSentiment HTTP/1.1\" 200 10 \"http://0.0.0.0:3000/\" \"Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0\"\n","level":"info"}
+[-] Request: POST /datumBoxSentiment at Wed Oct 23 2019 17:58:59 GMT-0400, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0
+[undefined] Request Body:
+{
+	"tweetText": "RT @OlympicTravelSr: Lepote Strazbura \n\n#travel #traveling #vacation #visiting #instatravel #instago #instagood #trip #holiday #photoofthed…"
+}
+neutral
+[-] Response: 200 667.053 ms 
+{"message":"::ffff:127.0.0.1 - - [23/Oct/2019:21:58:59 +0000] \"POST /datumBoxSentiment HTTP/1.1\" 200 9 \"http://0.0.0.0:3000/\" \"Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0\"\n","level":"info"}
+{ polarity: 0.5, magnitude: 0.9, score: 0.2 }
+[-] Request: POST /googleSentiment at Wed Oct 23 2019 17:58:59 GMT-0400, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0
+[undefined] Request Body:
+{
+	"tweetText": "RT @Michelebourke1: Thought I'd share a small selection of this year's paintings. #artforsale #giftideas #christmasgifts #wallart #fun #pai…"
+}
+{
+	"polarity": 0.5,
+	"magnitude": 0.9,
+	"score": 0.2
+}
+
+
+# Google NLP API Response:
+
+
+[-] Response: 200 708.792 ms 
+{"message":"::ffff:127.0.0.1 - - [23/Oct/2019:21:58:59 +0000] \"POST /googleSentiment HTTP/1.1\" 200 44 \"http://0.0.0.0:3000/\" \"Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0\"\n","level":"info"}
+{ polarity: 1, magnitude: 0.7, score: 0.7 }
+[-] Request: POST /googleSentiment at Wed Oct 23 2019 17:58:59 GMT-0400, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0
+[undefined] Request Body:
+{
+	"tweetText": "RT @JohnStr50919099: 80’s Fundraiser for Laurentian Ski Hill!\n#fun\n#northbay\n#davediclub https://t.co/YyeUgxihEO"
+}
+{
+	"polarity": 1,
+	"magnitude": 0.7,
+	"score": 0.7
+}
+[-] Response: 200 324.411 ms 
+{"message":"::ffff:127.0.0.1 - - [23/Oct/2019:21:58:59 +0000] \"POST /googleSentiment HTTP/1.1\" 200 42 \"http://0.0.0.0:3000/\" \"Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0\"\n","level":"info"}
+{ polarity: 0.8, magnitude: 0.7, score: 0.2 }
+[-] Request: POST /googleSentiment at Wed Oct 23 2019 17:58:59 GMT-0400, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0
+{
+	"tweetText": "RT @OlympicTravelSr: Lepote Strazbura \n\n#travel #traveling #vacation #visiting #instatravel #instago #instagood #trip #holiday #photoofthed…"
+}
+{
+	"polarity": 0.8,
+	"magnitude": 0.7,
+	"score": 0.2
+}
+[-] Response: 200 825.599 ms 
+{"message":"::ffff:127.0.0.1 - - [23/Oct/2019:21:58:59 +0000] \"POST /googleSentiment HTTP/1.1\" 200 44 \"http://0.0.0.0:3000/\" \"Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0\"\n","level":"info"}
+{ polarity: 1, magnitude: 0.9, score: 0.9 }
+[-] Request: POST /googleSentiment at Wed Oct 23 2019 17:58:59 GMT-0400, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0
+{
+	"tweetText": "#fun #accs #outside Nature Catnip Ball Catnip Toy for Cat Healthy Natural Treatment Molar Snack Cleaning Teath Funn… https://t.co/DrM9ktqTG2"
+}
+{
+	"polarity": 1,
+	"magnitude": 0.9,
+	"score": 0.9
+}
+[-] Response: 200 826.739 ms 
+{"message":"::ffff:127.0.0.1 - - [23/Oct/2019:21:58:59 +0000] \"POST /googleSentiment HTTP/1.1\" 200 42 \"http://0.0.0.0:3000/\" \"Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0\"\n","level":"info"}
+[-] Request: POST /datumBoxSentiment at Wed Oct 23 2019 17:59:00 GMT-0400, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0
+{
+	"tweetText": "#fun #accs #outside Nature Catnip Ball Catnip Toy for Cat Healthy Natural Treatment Molar Snack Cleaning Teath Funn… https://t.co/DrM9ktqTG2"
+}
+neutral
+[-] Response: 200 912.148 ms 
+{"message":"::ffff:127.0.0.1 - - [23/Oct/2019:21:59:00 +0000] \"POST /datumBoxSentiment HTTP/1.1\" 200 9 \"http://0.0.0.0:3000/\" \"Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0\"\n","level":"info"}
+{ polarity: 1, magnitude: 0.9, score: 0.9 }
+[-] Request: POST /googleSentiment at Wed Oct 23 2019 17:59:00 GMT-0400, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0
+{
+	"tweetText": "RT @Berti_and_Ernie: Water fun with dogs is always worth a photo!  #dogs #fun https://t.co/LL4oLxhyzB"
+}
+{
+	"polarity": 1,
+	"magnitude": 0.9,
+	"score": 0.9
+}
+[-] Response: 200 222.980 ms 
+{"message":"::ffff:127.0.0.1 - - [23/Oct/2019:21:59:00 +0000] \"POST /googleSentiment HTTP/1.1\" 200 42 \"http://0.0.0.0:3000/\" \"Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0\"\n","level":"info"}
+{ polarity: 1, magnitude: 0.6, score: 0.6 }
+[-] Request: POST /googleSentiment at Wed Oct 23 2019 17:59:00 GMT-0400, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0
+{
+	"tweetText": "RT @_ADPosey: https://t.co/5Ac3Mu4fWb @YouTube #youtube #channel #dancing #dance #rockinrobin #song #music #songs #exercise #fitness #fun #…"
+}
+{
+	"polarity": 1,
+	"magnitude": 0.6,
+	"score": 0.6
+}
+[-] Response: 200 217.072 ms 
+{"message":"::ffff:127.0.0.1 - - [23/Oct/2019:21:59:00 +0000] \"POST /googleSentiment HTTP/1.1\" 200 42 \"http://0.0.0.0:3000/\" \"Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0\"\n","level":"info"}
+[-] Request: POST /datumBoxSentiment at Wed Oct 23 2019 17:59:00 GMT-0400, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0
+{
+	"tweetText": "RT @JohnStr50919099: 80’s Fundraiser for Laurentian Ski Hill!\n#fun\n#northbay\n#davediclub https://t.co/YyeUgxihEO"
+}
+neutral
+[-] Response: 200 418.195 ms 
+{"message":"::ffff:127.0.0.1 - - [23/Oct/2019:21:59:00 +0000] \"POST /datumBoxSentiment HTTP/1.1\" 200 9 \"http://0.0.0.0:3000/\" \"Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0\"\n","level":"info"}
+{ polarity: 1, magnitude: 0.2, score: 0.1 }
+[-] Request: POST /googleSentiment at Wed Oct 23 2019 17:59:00 GMT-0400, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0
+{
+	"tweetText": "Sneak peak at the next hour !!  Introducing people to our #shorts and #Pickleball generates a similar reaction ...… https://t.co/PDsSFEQFl9"
+}
+{
+	"polarity": 1,
+	"magnitude": 0.2,
+	"score": 0.1
+}
+[-] Response: 200 240.668 ms 
+{"message":"::ffff:127.0.0.1 - - [23/Oct/2019:21:59:00 +0000] \"POST /googleSentiment HTTP/1.1\" 200 42 \"http://0.0.0.0:3000/\" \"Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0\"\n","level":"info"}
+[-] Request: POST /datumBoxSentiment at Wed Oct 23 2019 17:59:00 GMT-0400, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0
+{
+	"tweetText": "RT @Berti_and_Ernie: Water fun with dogs is always worth a photo!  #dogs #fun https://t.co/LL4oLxhyzB"
+}
+[undefined] Response Body:
+positive
+[-] Response: 200 626.010 ms 
+{"message":"::ffff:127.0.0.1 - - [23/Oct/2019:21:59:00 +0000] \"POST /datumBoxSentiment HTTP/1.1\" 200 10 \"http://0.0.0.0:3000/\" \"Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0\"\n","level":"info"}
+[-] Request: POST /datumBoxSentiment at Wed Oct 23 2019 17:59:00 GMT-0400, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0
+{
+	"tweetText": "RT @_ADPosey: https://t.co/5Ac3Mu4fWb @YouTube #youtube #channel #dancing #dance #rockinrobin #song #music #songs #exercise #fitness #fun #…"
+}
+neutral
+[-] Response: 200 674.839 ms 
+{"message":"::ffff:127.0.0.1 - - [23/Oct/2019:21:59:00 +0000] \"POST /datumBoxSentiment HTTP/1.1\" 200 9 \"http://0.0.0.0:3000/\" \"Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0\"\n","level":"info"}
+[-] Request: POST /datumBoxSentiment at Wed Oct 23 2019 17:59:00 GMT-0400, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0
+{
+	"tweetText": "Sneak peak at the next hour !!  Introducing people to our #shorts and #Pickleball generates a similar reaction ...… https://t.co/PDsSFEQFl9"
+}
+neutral
+[-] Response: 200 780.978 ms 
+{"message":"::ffff:127.0.0.1 - - [23/Oct/2019:21:59:00 +0000] \"POST /datumBoxSentiment HTTP/1.1\" 200 9 \"http://0.0.0.0:3000/\" \"Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0\"\n","level":"info"}
+
+

@@ -1,0 +1,90 @@
+
+
+.tweet {
+  text-decoration: none;
+  background-color: rgb(48, 48, 48);
+  border-radius: .25em;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+}
+
+.tweet:hover {
+  background-color: rgba(255, 255, 255, .1);
+}
+
+.tweet .tweetText {
+  margin: 1em;
+  font-family: helvetica;
+  font-size: 1.08em;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.tweet img {
+  text-align: center;
+  display: block;
+  border: 3px solid #ffffff;
+  border-radius: 3px;
+  margin: 1.5em auto 1.5em auto;
+}
+
+.googleSentiments {
+  margin-bottom: .5em;
+  text-align: center;
+}
+
+.googleSentiments p {
+  display: inline-block;
+  margin: .25em;
+}
+
+.googleSentiments:nth-child(1) {
+  margin-left: 2em;
+}
+
+.googleSentiments p span, .googleSentiments .apiLabel {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.datumboxSentiments p span, .datumboxSentiments .apiLabel {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.sentiment {
+  margin-bottom: .4em;
+}
+
+.datumboxSentiments {
+  text-align: center;
+  margin: 1em;
+}
+
+.datumboxSentiments p {
+  margin: .25em;
+  font-size: 1.2em;
+}
+
+.tweet-top {
+  width: 100%;
+  background-color: #f50057;
+  color: rgb(48, 48, 48);
+  border-radius: .25em .25em 0 0;
+}
+
+.tweet-top h4 {
+  margin: 0;
+  padding: .5em;
+}
+.apiLabel {
+  margin-bottom: .1em;
+  margin-top: .4em;
+}
+
+.googleSentiments h4 {
+  margin-bottom: 2px;
+}
+
+.wrapper {
+  grid-gap: .5em;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 1em;
+}

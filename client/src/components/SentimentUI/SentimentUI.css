@@ -1,0 +1,163 @@
+.status, .status-update {
+  text-align: center;
+  font-size:1em;
+}
+.statusImg {
+   display: block;
+   margin: 0 auto;
+   width: 160px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin: 20px;
+  margin: 20px 20px 40px 20px;
+  border-radius: .25em;
+}
+
+.form-top {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row: 2;
+}
+
+main header {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row: 1;
+}
+
+.input-ui {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row: 2;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+  border-radius: .25em;
+}
+
+.input-top {
+  height: 3.7em;
+  border-radius: .25em .25em 0 0;
+}
+
+.input-top h1 {
+  color: rgb(48, 48, 48);
+  font-size: 24px;
+  font-weight: 500;
+  padding: .7em .5em;
+  float: left;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.input-bottom {
+  padding: 1em;
+  border-radius: 0em 0em .2em .2em;
+  background-color: #484848;
+}
+
+aside {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row: 2;
+  padding-left: 2.2em;
+}
+
+aside a {
+  color: #0097a7;
+}
+
+aside a:visited {
+ color: #ff4081;
+}
+
+.links {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row: 3;
+}
+
+.apiLabel {
+  text-align: center;
+}
+
+fieldset {
+  border-radius: 9px;
+}
+
+.details {
+  padding-top: 1em;
+  padding-bottom: .1em;
+}
+
+h3.title {
+  text-align: center;
+}
+.overall-avg {
+  margin-top: .6em;
+  margin-bottom: .6em;
+  text-align: center;
+}
+
+.google-sentiment-polarity {
+  padding: .5em;
+  font-size: 1.4em;
+  text-align: center;
+  display: block;
+}
+
+.google-sentiment-magnitude {
+  padding: .5em;
+  font-size: 1.4em;
+  display: block;
+  text-align: center;
+}
+.usernameLabel {
+  padding: 1em;
+}
+
+.intro {
+  padding-top: 1.6em;
+}
+
+fieldset {
+  font-size: 12px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  margin: 1em;
+}
+
+.screename, .hashtag {
+  margin: 0 0 1em 1em;
+}
+
+.inputs {
+  display: block;
+  float: left;
+  width: 100%;
+}
+
+.sentimentButton {
+  padding: 1em 0;
+  width: 34%;
+  display: block;
+  cursor: pointer;
+  border: 0;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  border-radius: .25em;
+  margin-top: .8em;
+}
+
+.sentimentButton:hover {
+  border: 2px solid #ccc;
+}
+
+.status, .status-update {
+  text-align: center;
+  font-size:1em;
+}
