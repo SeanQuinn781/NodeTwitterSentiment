@@ -7,6 +7,12 @@
 - DatumBox Sentiment API
 - Google Sentiment API
 
+Positive hashtag example:
+![demo1](demo1.png)
+
+Negative hashtag example:
+![demo2](demo2.png)
+
 # Description:
 
 Analyze tweet sentiment using an username or hashtag using two sentiment APIs. I originally created this app a couple years ago but it is tested on:
