@@ -13,6 +13,10 @@ Positive hashtag example:
 Negative hashtag example:
 ![demo2](demo2.png)
 
+Username example:
+![demo3](demo3.png)
+
+
 # Description:
 
 Analyze tweet sentiment using an username or hashtag using two sentiment APIs. I originally created this app a couple years ago but it is tested on:
