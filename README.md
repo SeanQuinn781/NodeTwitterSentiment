@@ -40,7 +40,7 @@ In order to run this app, you will need to sign up for the following free APIs:
 3. The Twitter API https://developer.twitter.com/en/docs
 
 
-After signing up for the APIs, create a file called 'config.js' in the application root with the following API credentials:
+After signing up for the APIs, create a file called 'config.js' in the repository root with the following API credentials:
 
 const config = {
   twitter: {
