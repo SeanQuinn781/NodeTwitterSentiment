@@ -55,9 +55,9 @@ app.post('/getTweets', (req, res) => {
       return err;
     })
     .then((result) => {
-      console.log('tweets result: ', result.data)
+      console.log('user_timeline tweets result: ', result.data)
       const tweets = result.data;
-      console.log('tweets', tweets)
+      console.log('user_timeline tweets', tweets)
       res.json(tweets)
     })
 });
@@ -77,6 +77,7 @@ app.post('/getHashtags', (req,res) => {
     })
     .then((result) => {
       const tweets = result.data.statuses;
+      console.log('hashtag results ', tweets);
       res.json(tweets)
     })
 });
@@ -88,10 +89,10 @@ app.post('/googleSentiment', (req, res) => {
   nlp.analyzeSentiment(tweetText)
     .then((result) => {
       const sentiment = result.documentSentiment;
-      console.log(sentiment);
+      console.log('nlp sentiments ', sentiment);
       res.json(sentiment);
     }).catch((err) => {
-      console.log(err);
+      console.log('nlp err ', err);
       return err;
     });
 });
@@ -100,8 +101,10 @@ app.post('/datumBoxSentiment', (req,res) => {
   const tweetText = req.body.tweetText;
   datum.twitterSentimentAnalysis(tweetText, (err, sentiment) => {
     if (err) {
+      console.log('datumbox error ', err);
       return err;
     }
+    console.log('datumbox sentiment ', sentiment);
     res.json(sentiment);
   });
 })

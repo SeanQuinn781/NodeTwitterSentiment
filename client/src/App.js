@@ -43,7 +43,7 @@ class App extends Component {
           'Content-Type': 'application/json',
           'Accept': 'application/json',
           'Access-Control-Allow-Origin' : '*',
-	  'Access-Control-Allow-Credentials' : true,
+	        'Access-Control-Allow-Credentials' : true,
         }
       })
         .then(res => res.json())
@@ -61,7 +61,7 @@ class App extends Component {
         headers: {
           'Content-Type': 'application/json',
           'Accept': 'application/json',
-	        'Access-Control-Allow-Origin' : '*',
+	  'Access-Control-Allow-Origin' : '*',
           'Access-Control-Allow-Credentials' : true
          }
       })
@@ -119,4 +119,3 @@ class App extends Component {
 }
 
 export default App;
-
