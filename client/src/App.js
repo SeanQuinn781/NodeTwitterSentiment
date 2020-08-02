@@ -61,7 +61,7 @@ class App extends Component {
         headers: {
           'Content-Type': 'application/json',
           'Accept': 'application/json',
-	  'Access-Control-Allow-Origin' : '*',
+	        'Access-Control-Allow-Origin' : '*',
           'Access-Control-Allow-Credentials' : true
          }
       })

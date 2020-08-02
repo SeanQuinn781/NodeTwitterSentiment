@@ -21,8 +21,8 @@ Username example:
 
 Analyze tweet sentiment using an username or hashtag using two sentiment APIs. I originally created this app a couple years ago but it is tested on:
 
-Node 10.17.0
-Npm  6.11.3
+Node 12.18.2
+Npm  6.14.7
 
 The live app is running on Herkoku and can be tried out at: 
 https://salty-journey-93853.herokuapp.com/
@@ -76,8 +76,7 @@ API requests will be visible via terminal output
 
 2. Go to http://0.0.0.0:3000/ to see the App
 
-
 TODO:
-
+Average sentiments from both APIs and render on front end
 Dockerfile
 Get All Tweets
