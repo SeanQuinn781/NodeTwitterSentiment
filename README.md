@@ -65,8 +65,9 @@ To change ports or HOST to a live URL edit the .env file
 # Usage
 
 
-1. Install dependencies and run the app: 
+1. Install dependencies and run the app from the root directory: 
 ```
+   cd NodeTwitterSentiment
    npm install
    npm start
 ```
@@ -80,5 +81,3 @@ TODO:
 
 Dockerfile
 Get All Tweets
-MongoDB to store tweet sentiment over time, or requests
-npm audit fix
