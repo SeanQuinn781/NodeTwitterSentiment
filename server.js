@@ -49,7 +49,7 @@ app.post('/getTweets', (req, res) => {
   });
   const screename = req.body.screename;
   Twitter.get('statuses/user_timeline', {
-    screen_name: screename, count: 10, method: 'GET'
+    screen_name: screename, count: 1000, method: 'GET'
   }).catch((err) => {
       console.log('caught error', err.stack);
       return err;
@@ -71,7 +71,7 @@ app.post('/getHashtags', (req,res) => {
   });
   const hashtag = req.body.hashtag;
   Twitter.get( 'https://api.twitter.com/1.1/search/tweets.json', {
-    q: `%23${hashtag}`, count: 10 }).catch((err) => {
+    q: `%23${hashtag}`, count: 1000 }).catch((err) => {
       console.log('caught error', err.stack);
       return err;
     })
