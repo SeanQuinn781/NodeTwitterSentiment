@@ -1,3 +1,7 @@
 node_modules
 config.js
 logs/app.log
+.eslintrc
+.vscode
+venv
+server/venv
