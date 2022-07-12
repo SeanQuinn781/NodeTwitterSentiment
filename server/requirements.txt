@@ -11,7 +11,7 @@ Flask-Session==0.3.2
 imageio==2.9.0
 imageio-ffmpeg==0.4.2
 networkx==2.5
-numpy==1.19.1
+numpy==1.22.0
 onnx==1.7.0
 onnxruntime==1.4.0
 opencv-python==4.4.0.42
